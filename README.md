@@ -15,11 +15,11 @@ This tool allows you to send multiple SMS messages to a Robi number. **Note:** T
 
 1. **Clone the Repository**: Open your terminal and clone the repository from GitHub:
    ```bash
-   git clone https://github.com/md-rs01/Robi-ddos.git```
+   git clone https://github.com/md-rs01/Robi-ddos.git
 2. **Navigate to the Directory**: Move into the project directory:
 
    ```bash
-   cd Robi-ddos```
+   cd Robi-ddos
 
 3. **Install Dependencies**: Install the required packages listed in requirements.txt:
 
