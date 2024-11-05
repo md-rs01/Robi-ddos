@@ -5,6 +5,7 @@ import threading
 from datetime import datetime
 from colorama import init, Fore, Style
 import urllib3
+import time  # Import the time module for sleep
 
 # Disable urllib3 warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -62,6 +63,8 @@ def send_request(full_msisdn, error_count):
             logging.info(f"{Fore.GREEN}Request successful to {full_msisdn}")
     except requests.exceptions.RequestException as e:
         logging.error(f"{Fore.RED}Request failed: {e}")
+    
+    time.sleep(0.5)  # Pause for 0.5 seconds between requests
 
 def send_requests_concurrently(full_msisdn, amount, error_count):
     threads = []
